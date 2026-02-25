@@ -119,7 +119,7 @@ section.foot {
   section.body {
     padding-bottom: 8px;
     & .text {
-      padding-bottom: 10px;
+      padding-bottom: 7px;
     }
     & table {
       & p {
