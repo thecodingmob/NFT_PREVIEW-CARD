@@ -113,11 +113,14 @@ section.foot {
       padding: 0 0 18px 0;
     }
     & tr {
-      gap: 5.1em;
+      gap: 5.3em;
     }
   }
   section.body {
     padding-bottom: 8px;
+    & .text {
+      padding-bottom: 10px;
+    }
     & table {
       & p {
         font-size: 16px;
@@ -132,6 +135,7 @@ section.foot {
     }
     & p {
       font-size: 16px;
+      font-weight: var(--fw-600);
     }
   }
 }
