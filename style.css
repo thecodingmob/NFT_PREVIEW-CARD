@@ -105,7 +105,7 @@ section.foot {
 }
 @media (min-width: 48em) {
   article {
-    width: 353px;
+    width: 359px;
   }
   section.body {
     & h1 {
