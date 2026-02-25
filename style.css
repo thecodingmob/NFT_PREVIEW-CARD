@@ -105,7 +105,7 @@ section.foot {
 }
 @media (min-width: 48em) {
   article {
-    width: 359px;
+    width: 358px;
   }
   section.body {
     & h1 {
@@ -113,11 +113,16 @@ section.foot {
       padding: 0 0 18px 0;
     }
     & tr {
-      gap: 5.3em;
+      gap: 5.1em;
     }
   }
   section.body {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
+    & table {
+      & p {
+        font-size: 16px;
+      }
+    }
   }
   section.foot {
     padding-bottom: 12px;
