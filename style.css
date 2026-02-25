@@ -1,0 +1,132 @@
+:root {
+  /*color primary*/
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+
+  /*color neutral*/
+  --blue-800: hsl(215, 32%, 27%);
+  --blue-900: hsl(216, 50%, 16%);
+  --blue-950: hsl(217, 54%, 11%);
+  --white: hsl(0, 0%, 100%);
+
+  /*font weights*/
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("font/Outfit-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.125em;
+  font-family: "Outfit";
+  height: 100%;
+  background-color: var(--blue-950);
+  color: var(--white);
+}
+article {
+  width: 358px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--blue-900);
+  padding: 24px;
+  border-radius: 1em;
+}
+
+/*sections within article element styles*/
+
+section.head {
+  & img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+section.body {
+  padding: 20px 0 5px 0;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--blue-800);
+  & h1 {
+    padding: 0 0 12px 0;
+    font-size: 1.36em;
+    font-weight: var(--fw-600);
+  }
+  & .text {
+    color: var(--blue-500);
+    font-weight: var(--fw-300);
+  }
+  & table {
+    padding: 20px 0 10px 0;
+    & p {
+      font-weight: var(--fw-400);
+    }
+    & .eth {
+      color: var(--cyan-400);
+    }
+    & .time {
+      color: var(--blue-500);
+    }
+  }
+  & tr {
+    display: flex;
+    gap: 5.66em;
+  }
+  & td {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+  }
+}
+section.foot {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  & img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+  }
+  & p {
+    display: inline;
+    & span {
+      color: var(--blue-500);
+      font-weight: var(--fw-300);
+    }
+  }
+}
+@media (min-width: 48em) {
+  article {
+    width: 353px;
+  }
+  section.body {
+    & h1 {
+      font-size: 1.23em;
+      padding: 0 0 18px 0;
+    }
+    & tr {
+      gap: 5.3em;
+    }
+  }
+  section.body {
+    padding-bottom: 10px;
+  }
+  section.foot {
+    padding-bottom: 12px;
+    & img {
+      width: 35px;
+      height: 35px;
+    }
+    & p {
+      font-size: 16px;
+    }
+  }
+}
